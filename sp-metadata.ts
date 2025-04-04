@@ -8,6 +8,7 @@ const samlConfig: SamlOptions = {
   issuer: 'nestjs-saml-demo',
   cert: fs.readFileSync('./cert.pem', 'utf8'),
   privateCert: fs.readFileSync('./key.pem', 'utf8'),
+  
 };
 
 const { getSamlMetadata } = require('passport-saml-metadata');
